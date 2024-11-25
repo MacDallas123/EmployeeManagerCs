@@ -1,0 +1,191 @@
+/// <XRTypeInfo>
+///   <AssemblyFullName>DevExpress.XtraReports.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</AssemblyFullName>
+///   <AssemblyLocation>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraReports.v15.2\v4.0_15.2.7.0__b88d1754d700e49a\DevExpress.XtraReports.v15.2.dll</AssemblyLocation>
+///   <TypeName>DevExpress.XtraReports.UI.XtraReport</TypeName>
+///   <Localization>en-US</Localization>
+///   <Version>15.2</Version>
+///   <Resources>
+///     <Resource Name="XtraReportSerialization.XtraReport">
+/// zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAAAAAAAAAAAFBBRFBBRFC0AAAA</Resource>
+///   </Resources>
+/// </XRTypeInfo>
+namespace XtraReportSerialization {
+    
+    public class XtraReport : DevExpress.XtraReports.UI.XtraReport {
+        private DevExpress.XtraReports.UI.TopMarginBand topMarginBand1;
+        private DevExpress.XtraReports.UI.PageHeaderBand pageHeaderBand1;
+        private DevExpress.XtraReports.UI.XRTable table1;
+        private DevExpress.XtraReports.UI.XRTableRow tableRow1;
+        private DevExpress.XtraReports.UI.DetailBand detailBand1;
+        private DevExpress.XtraReports.UI.XRTable table2;
+        private DevExpress.XtraReports.UI.XRTableRow tableRow2;
+        private DevExpress.XtraReports.UI.BottomMarginBand bottomMarginBand1;
+        private DevExpress.XtraReports.UI.XRControlStyle ReportHeaderBandStyle;
+        private DevExpress.XtraReports.UI.XRControlStyle ReportGroupHeaderBandStyle;
+        private DevExpress.XtraReports.UI.XRControlStyle ReportDetailBandStyle;
+        private DevExpress.XtraReports.UI.XRControlStyle ReportGroupFooterBandStyle;
+        private DevExpress.XtraReports.UI.XRControlStyle ReportFooterBandStyle;
+        private DevExpress.XtraReports.UI.XRControlStyle ReportOddStyle;
+        private DevExpress.XtraReports.UI.XRControlStyle ReportEvenStyle;
+        private System.Resources.ResourceManager _resources;
+        private string _resourceString;
+        public XtraReport() {
+            this._resourceString = DevExpress.XtraReports.Serialization.XRResourceManager.GetResourceFor("XtraReportSerialization.XtraReport");
+            this.InitializeComponent();
+        }
+        private System.Resources.ResourceManager resources {
+            get {
+                if (_resources == null) {
+                    this._resources = new DevExpress.XtraReports.Serialization.XRResourceManager(this._resourceString);
+                }
+                return this._resources;
+            }
+        }
+        private void InitializeComponent() {
+            this.topMarginBand1 = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.pageHeaderBand1 = new DevExpress.XtraReports.UI.PageHeaderBand();
+            this.detailBand1 = new DevExpress.XtraReports.UI.DetailBand();
+            this.bottomMarginBand1 = new DevExpress.XtraReports.UI.BottomMarginBand();
+            this.table1 = new DevExpress.XtraReports.UI.XRTable();
+            this.tableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.table2 = new DevExpress.XtraReports.UI.XRTable();
+            this.tableRow2 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.ReportHeaderBandStyle = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.ReportGroupHeaderBandStyle = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.ReportDetailBandStyle = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.ReportGroupFooterBandStyle = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.ReportFooterBandStyle = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.ReportOddStyle = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.ReportEvenStyle = new DevExpress.XtraReports.UI.XRControlStyle();
+            ((System.ComponentModel.ISupportInitialize)(this.table1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.table2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+            // 
+            // topMarginBand1
+            // 
+            this.topMarginBand1.HeightF = 100F;
+            this.topMarginBand1.Name = "topMarginBand1";
+            // 
+            // pageHeaderBand1
+            // 
+            this.pageHeaderBand1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.table1});
+            this.pageHeaderBand1.HeightF = 25F;
+            this.pageHeaderBand1.Name = "pageHeaderBand1";
+            this.pageHeaderBand1.StyleName = "ReportHeaderBandStyle";
+            // 
+            // detailBand1
+            // 
+            this.detailBand1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.table2});
+            this.detailBand1.EvenStyleName = "ReportEvenStyle";
+            this.detailBand1.HeightF = 25F;
+            this.detailBand1.Name = "detailBand1";
+            this.detailBand1.OddStyleName = "ReportOddStyle";
+            this.detailBand1.StyleName = "ReportDetailBandStyle";
+            // 
+            // bottomMarginBand1
+            // 
+            this.bottomMarginBand1.HeightF = 100F;
+            this.bottomMarginBand1.Name = "bottomMarginBand1";
+            // 
+            // table1
+            // 
+            this.table1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.table1.Name = "table1";
+            this.table1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+                        this.tableRow1});
+            this.table1.SizeF = new System.Drawing.SizeF(650F, 25F);
+            // 
+            // tableRow1
+            // 
+            this.tableRow1.Name = "tableRow1";
+            this.tableRow1.Weight = 11.5D;
+            // 
+            // table2
+            // 
+            this.table2.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.table2.Name = "table2";
+            this.table2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+                        this.tableRow2});
+            this.table2.SizeF = new System.Drawing.SizeF(650F, 25F);
+            // 
+            // tableRow2
+            // 
+            this.tableRow2.Name = "tableRow2";
+            this.tableRow2.Weight = 11.5D;
+            // 
+            // ReportHeaderBandStyle
+            // 
+            this.ReportHeaderBandStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(206)))));
+            this.ReportHeaderBandStyle.Name = "ReportHeaderBandStyle";
+            this.ReportHeaderBandStyle.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 4, 0, 0, 100F);
+            this.ReportHeaderBandStyle.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // ReportGroupHeaderBandStyle
+            // 
+            this.ReportGroupHeaderBandStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(206)))));
+            this.ReportGroupHeaderBandStyle.Name = "ReportGroupHeaderBandStyle";
+            this.ReportGroupHeaderBandStyle.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 0, 0, 0, 100F);
+            this.ReportGroupHeaderBandStyle.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // ReportDetailBandStyle
+            // 
+            this.ReportDetailBandStyle.BackColor = System.Drawing.Color.Transparent;
+            this.ReportDetailBandStyle.Name = "ReportDetailBandStyle";
+            this.ReportDetailBandStyle.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 4, 0, 0, 100F);
+            this.ReportDetailBandStyle.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // ReportGroupFooterBandStyle
+            // 
+            this.ReportGroupFooterBandStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(206)))));
+            this.ReportGroupFooterBandStyle.Name = "ReportGroupFooterBandStyle";
+            this.ReportGroupFooterBandStyle.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 4, 0, 0, 100F);
+            this.ReportGroupFooterBandStyle.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // ReportFooterBandStyle
+            // 
+            this.ReportFooterBandStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(206)))));
+            this.ReportFooterBandStyle.Name = "ReportFooterBandStyle";
+            this.ReportFooterBandStyle.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 4, 0, 0, 100F);
+            this.ReportFooterBandStyle.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // ReportOddStyle
+            // 
+            this.ReportOddStyle.BackColor = System.Drawing.Color.Transparent;
+            this.ReportOddStyle.Name = "ReportOddStyle";
+            this.ReportOddStyle.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 4, 0, 0, 100F);
+            this.ReportOddStyle.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // ReportEvenStyle
+            // 
+            this.ReportEvenStyle.BackColor = System.Drawing.Color.Transparent;
+            this.ReportEvenStyle.Name = "ReportEvenStyle";
+            this.ReportEvenStyle.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 4, 0, 0, 100F);
+            this.ReportEvenStyle.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // XtraReport
+            // 
+            this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
+                        this.topMarginBand1,
+                        this.pageHeaderBand1,
+                        this.detailBand1,
+                        this.bottomMarginBand1});
+            this.Name = "XtraReport";
+            this.PageHeight = 1100;
+            this.PageWidth = 850;
+            this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
+                        this.ReportHeaderBandStyle,
+                        this.ReportGroupHeaderBandStyle,
+                        this.ReportDetailBandStyle,
+                        this.ReportGroupFooterBandStyle,
+                        this.ReportFooterBandStyle,
+                        this.ReportOddStyle,
+                        this.ReportEvenStyle});
+            this.Version = "15.2";
+            ((System.ComponentModel.ISupportInitialize)(this.table1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.table2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+        }
+    }
+}
